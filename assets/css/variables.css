@@ -7,4 +7,10 @@
     --color-light-grey: hsl(30, 18%, 87%);
     --color-wenge-brown: hsl(30, 10%, 34%);
     --color-dark-charcoal: hsl(24, 5%, 18%);
+
+    --font-heading-l:40px;
+    --font-heading-m:28px;
+    --font-heading-s:20px;
+    --font-body-regular:regular;
+    --font-body-bold:bold;
 }

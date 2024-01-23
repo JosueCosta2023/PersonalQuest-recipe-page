@@ -4,6 +4,7 @@ body{
     font-size: 16px;
     /* font-family: 'Outfit', sans-serif; */
     /* font-family: 'Young Serif', serif; */
+    background-color: var(--color-eggshell);
 }
 
 .attribution { font-size: 11px; text-align: center; }    
@@ -11,20 +12,18 @@ body{
 
 .container{
     width: 100%;
-    height: 100vh;
-    background-color: var(--color-eggshell);
     display: flex;
     justify-content: center;
 }
 
 .container .content-page{
     max-width: 736px;
-    width: 80%;
-    height: auto;
+    width: 90%;
     background-color: var(--color-white);
     padding: 40px;
     margin-top: 123px;
     border-radius: 24px;
+    margin-bottom: 200px;
 }
 
 .container .content-page .banner{
@@ -40,6 +39,7 @@ body{
 
 .container .content-page .principal-title{
     font-family: 'Young Serif', serif;
+    letter-spacing: 2px;
     font-size: var(--font-heading-l);
     color: var(--color-dark-charcoal);
     margin-bottom: 24px;
@@ -52,3 +52,210 @@ body{
     letter-spacing: 2px;
     margin-bottom: 32px;
 }
+
+.container .content-page .list-preparation{
+    background-color: var(--color-rose-white);
+    padding: 28px;
+    border-radius: 12px;
+    margin-bottom: 32px;
+}
+.container .content-page .list-preparation .prepar-title{
+    font-family: 'Young Serif', serif;
+    letter-spacing: 2px;
+    font-size: var(--font-heading-s);
+    color: var( --color-primary-dark-raspberry);
+    font-weight: var(--font-body-bold);
+    margin-bottom: 16px;
+}
+
+.container .content-page .list-preparation li{
+    font-family: 'Outfit', sans-serif;
+    color: var(--color-wenge-brown);
+    font-family: 'Outfit', sans-serif;
+    list-style: inside;
+    gap: 8px;
+    list-style: none;
+    line-height: 32px;
+    position: relative;
+    padding-left: 40px;
+}
+.container .content-page .list-preparation li::before{
+    content: '\2022';
+    display: block;
+    color: var( --color-primary-dark-raspberry);
+    font-size: 2rem;
+    left: 0;
+    position: absolute;
+}
+.container .content-page .list-preparation li .key{
+    font-weight: var(--font-body-bold);
+}
+
+.container .content-page .list-itens{
+    border-bottom: 2px solid #E3DDD7;
+    list-style: none;
+}
+
+.container .content-page .list-itens .title{
+    font-family: 'Young Serif', serif;
+    letter-spacing: 2px;
+    font-size: var(--font-heading-m);
+    color: var(--color-brandy-red);
+    font-weight: var(--font-body-bold);
+    margin-bottom: 24px;
+}
+
+.container .content-page .list-itens li{
+    font-family: 'Outfit', sans-serif;
+    color: var(--color-wenge-brown);
+    list-style: inside;
+    gap: 8px;
+    list-style: none;
+    line-height: 32px;
+    position: relative;
+    padding-left: 40px;
+}
+.container .content-page .list-itens li::before{
+    content: '\2022';
+    display: block;
+    color: var(--color-brandy-red);
+    font-size: 2rem;
+    left: 0;
+    position: absolute;
+}
+.container .content-page .list-itens li:last-child{
+    margin-bottom: 32px;
+}
+
+.container .content-page .list-instruction{
+    border-bottom: 2px solid #E3DDD7;
+}
+.container .content-page .list-instruction h2{
+    font-family: 'Young Serif', serif;
+    letter-spacing: 2px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    font-size: var(--font-heading-m);
+    font-weight: var(--font-body-bold);
+    color: var(--color-brandy-red);
+}
+
+.container .content-page .list-instruction li{
+    counter-increment: number;
+    font-family: 'Outfit', sans-serif;
+    color: var(--color-wenge-brown);
+    list-style: inside;
+    gap: 8px;
+    list-style: none;
+    line-height: 32px;
+    position: relative;
+    padding-left: 40px;
+}
+
+.container .content-page .list-instruction li::before{
+    content: counter(number) '\2022';
+    display: block;
+    color: var(--color-brandy-red);
+    font-size: 1rem;
+    left: 0;
+    position: absolute;
+    align-items: bottom;
+}
+
+.container .content-page .list-instruction li span{
+    font-weight: var(--font-body-bold);
+}
+
+.container .content-page .list-instruction li:last-child{
+    margin-bottom: 32px;
+}
+
+.container .content-page .nutrition .title{
+    font-family: 'Young Serif', serif;
+    letter-spacing: 2px;
+    margin-top: 32px;
+    margin-bottom: 24px;
+    font-size: var(--font-heading-m);
+    font-weight: var(--font-body-bold);
+    color: var(--color-brandy-red);
+}
+
+.container .content-page .nutrition .text{
+    font-family: 'Outfit', sans-serif;
+    color: var(--color-wenge-brown);
+    font-weight: var(--font-body-regular);
+    margin-bottom: 24px;
+}
+
+.container .content-page .nutrition table{
+    width: 100%;
+}
+
+.container .content-page .nutrition table tbody tr{
+    border-bottom: 2px solid #E3DDD7;
+    display: flex;
+    width: 100%;
+    line-height: 48px;
+    font-family: 'Outfit', sans-serif;
+
+}
+
+.container .content-page .nutrition table tbody tr:last-child{
+    border: none;
+    margin-bottom: 50px;
+}
+
+.container .content-page .nutrition table tbody tr td{
+    padding-left: 32px;
+    width: 48%;
+    display: block;
+    color: var(--color-wenge-brown);
+
+}
+
+.container .content-page .nutrition table tbody tr td:last-child{
+    color: var(--color-brandy-red);
+    font-weight: var(--font-body-bold);
+}
+
+@media(max-width: 430px){
+    .container .content-page .principal-title{
+        font-size: 26px;
+        letter-spacing: 0px;
+        font-weight: var(--font-body-regular); 
+    }
+
+    .container .content-page{
+        padding: 0px;
+    }
+
+    .container .content-page .banner{
+        background-size: cover;
+        border-radius: 0px;
+    }
+
+    .container .content-page .principal-title,
+    .container .content-page .principal-text,
+    .container .content-page .list-itens,
+    .container .content-page .list-instruction,
+    .container .content-page .nutrition,
+    .container .content-page .attribution{
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 0;
+    }
+
+    .container .content-page .attribution{
+        margin-bottom: 20px;
+    }
+   
+
+
+
+}
+
+
+
+
+
+
